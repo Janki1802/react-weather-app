@@ -1,0 +1,121 @@
+.weather {
+    place-self: center;
+    padding: 40px;
+    border-radius: 20px;
+    background: rgba(47, 70, 128, 0.9);
+    backdrop-filter: blur(10px);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.3);
+    transition: all 0.3s ease-in-out;
+    max-width: 400px;
+}
+
+.search_bar {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 20px;
+}
+
+.search_bar input {
+    height: 50px;
+    width: 240px;
+    border: none;
+    outline: none;
+    border-radius: 40px;
+    padding-left: 20px;
+    color: #2f2f2f;
+    background: rgba(255, 255, 255, 0.8);
+    font-size: 18px;
+    transition: 0.3s;
+    box-shadow: 0px 5px 15px rgba(255, 255, 255, 0.2);
+}
+
+.search_bar input:focus {
+    background: #fff;
+    box-shadow: 0px 5px 20px rgba(255, 255, 255, 0.4);
+}
+
+.search_bar img {
+    width: 50px;
+    padding: 12px;
+    border-radius: 50%;
+    cursor: pointer;
+    background: rgba(255, 255, 255, 0.8);
+    transition: 0.3s;
+}
+
+.search_bar img:hover {
+    transform: scale(1.1);
+    background: white;
+    box-shadow: 0px 5px 15px rgba(255, 255, 255, 0.4);
+}
+
+.weather-icon {
+    width: 120px;
+    margin: 20px 0;
+    filter: drop-shadow(0px 5px 10px rgba(0, 0, 0, 0.3));
+}
+
+.temperature {
+    color: #fff;
+    font-size: 70px;
+    font-weight: bold;
+    line-height: 1;
+}
+
+.location {
+    color: #fff;
+    font-size: 18px;
+    font-weight: 500;
+    margin-bottom: 10px;
+}
+
+.weather-data {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px;
+    color: #fff;
+    padding: 0 10px;
+}
+
+.weather-data .col {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 20px;
+}
+
+.weather-data .col span {
+    display: block;
+    font-size: 14px;
+    opacity: 0.8;
+}
+
+.weather-data .col img {
+    width: 30px;
+    margin-top: 5px;
+}
+
+@media (max-width: 480px) {
+    .weather {
+        padding: 30px;
+        max-width: 320px;
+    }
+
+    .temperature {
+        font-size: 60px;
+    }
+
+    .weather-data {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .weather-data .col {
+        margin-bottom: 10px;
+    }
+}
